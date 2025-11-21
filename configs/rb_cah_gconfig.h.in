@@ -1,0 +1,146 @@
+
+#ifndef __RB_CAH_GCONFIG_H__
+#define __RB_CAH_GCONFIG_H__
+
+/*******************************************************************************
+ *  公共头文件
+ *******************************************************************************/
+#include <float.h>
+#include <iostream>
+#include <stdio.h>
+#include <string>
+#include <vector>
+
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+
+#include "rb_common.h"
+
+/*******************************************************************************
+ *  相关编译信息
+ *******************************************************************************/
+#define PROJECT_NAME       "${CMAKE_PROJECT_NAME}"
+
+/* 版本信息 */
+#define LIB_VERSION        "${GIT_TAG_VERSION}"
+
+/* md5 信息 */
+#define LIB_COMMIT_MD5     "${GIT_COMMIT_MD5}"
+
+/* 编译日期和时间 */
+#define BUILD_DATETIME     "${BUILDDATETIME}"
+
+// /* 默认1个ROI */
+// #define DEFAULT_ROI_NUM 1
+
+// /* 默认ROI的顶点数 */
+// #define DEFAULT_ROI_VER_NUM 4
+
+// /* 设置ROI扩展比例 */
+// #define BUFFER_LEN 5
+
+// /* 内部收缩像素数 */
+// #define INNER_BORDER 5
+
+// /* 外部扩展像素数 */
+// #define OUTTER_BORDER 5
+
+/* 使用 ncnn 作为前向推理框架 */
+#cmakedefine WITH_NCNN
+
+/* 使用内存加载模型的方式 */
+#cmakedefine LOAD_MEM_MODEL
+
+/* 使用 rknn */
+#cmakedefine WITH_RKNN
+
+/* debug信息 */
+#cmakedefine BUILD_DEBUG
+
+/* 显示内部的图像 */
+#cmakedefine SHOW_DEBUG_IMG
+
+/* 显示内部的处理时间 */
+#cmakedefine SHOW_DEBUG_TIME
+
+/* 显示内部的打印信息 */
+#cmakedefine SHOW_DEBUG_INFO
+
+/*******************************************************************************
+ *  ncnn 的网络相关参数
+ *******************************************************************************/
+/* ncnn 的参数路径 */
+#define NCNN_PARAM_PATH     "${NCNN_PARAM_PATH}"
+#define NCNN_BIN_PATH       "${NCNN_BIN_PATH}"
+
+/* 内存中文件的名字， 可以查看最新生成的 rb_fhd_mem.h内部名字 */
+#define MODEL_PREFIX        @MODEL_PREFIX@
+#define NCNN_PARAM_ID_SPACE @MODEL_PREFIX@_ncnn_param_id
+#define NCNN_PARAM_MEM      @MODEL_PREFIX@_ncnn_param_bin /* ncnn_param_bin */
+#define NCNN_BIN_MEM        @MODEL_PREFIX@_ncnn_bin /* ncnn_bin */
+
+/*******************************************************************************
+ *  RKNN 网络模型参数
+ *******************************************************************************/
+#define MODEL_NAME          "${MODEL_NAME}"
+
+/* 目标类别数 */
+#define OBJ_CLASS_NUM       @OBJ_CLASS_NUM@
+
+/* 候选框大小 */
+#define PROP_BOX_SIZE      (5 + @OBJ_CLASS_NUM@)
+
+/*******************************************************************************
+ *  项目相关参数宏定义
+ *******************************************************************************/
+#define TGT_IM_SZ @TGT_IM_SZ@  /* 网络图像大小 */
+#define PROB_THR  @PROB_THR@   /* 置信度阈值 */
+#define NMS_THR   @NMS_THR@    /* nms 阈值 */
+
+/* 设置ROI扩展比例 */
+#define BUFFER_LEN        @BUFFER_LEN@
+
+/* 内部收缩像素数 */
+#define INNER_BORDER      @INNER_BORDER@
+
+/* 外部扩展像素数 */
+#define OUTTER_BORDER     @OUTTER_BORDER@
+
+/* 设置目标与ROI重叠阈值(默认灵敏度下的阈值  (0~1)) */
+#define OVERLAP_THR       @OVERLAP_THR@
+
+/* 设置低灵敏度的倍数(灵敏度越低，重叠阈值越大 1~2) */
+#define LOW_SENS_RATIO    @LOW_SENS_RATIO@
+
+/* 设置高灵敏度的倍数(灵敏度越高，重叠阈值越小, 0~1) */
+#define HIGH_SENES_RATIO  @HIGH_SENES_RATIO@
+
+/* 默认1个ROI */
+#define DEFAULT_ROI_NUM     1     
+
+/* 默认ROI的顶点数 */
+#define DEFAULT_ROI_VER_NUM 4     
+
+
+/*******************************************************************************
+ *  全局函数
+ *******************************************************************************/
+#ifdef SHOW_DEBUG_TIME
+#ifdef _WIN32
+#include <windows.h>
+#else
+#include <sys/time.h>
+#include <unistd.h>
+#endif
+void __sleep_time(int ims);        /* sleep time */
+double __get_current_time_proc();  /* 获取当前时间 */
+#endif
+
+/* 获取签名信息 */
+const char *rb_cah_get_signature();
+
+/* 将 RB_IMAGE 转换为 OpenCV 图像 */
+cv::Mat convert2CvMat(const RB_IMAGE_S *pstImg);
+
+#endif // __RB_CAH_GCONFIG_H__

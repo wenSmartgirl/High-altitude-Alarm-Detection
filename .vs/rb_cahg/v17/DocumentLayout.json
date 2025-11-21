@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\28360\\Desktop\\rb_cahg\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\rb_cah_example_image.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:examples\\rb_cah_example_image.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\28360\\Desktop\\rb_cahg\\src\\module\\source\\rb_cah_detector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\module\\source\\rb_cah_detector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\rb_cah_example_utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:examples\\rb_cah_example_utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\rb_cah_example_utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:examples\\rb_cah_example_utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\28360\\Desktop\\rb_cahg\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\28360\\Desktop\\rb_cahg\\src\\interface\\rb_common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\interface\\rb_common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\28360\\Desktop\\rb_cahg\\src\\interface\\rb_cah_para.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\interface\\rb_cah_para.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\28360\\Desktop\\rb_cahg\\src\\interface\\rb_cah_api.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\interface\\rb_cah_api.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:examples\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\rb_cah_example_video.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:examples\\rb_cah_example_video.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\28360\\Desktop\\rb_cahg\\src\\module\\include\\rb_cah_utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\module\\include\\rb_cah_utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "rb_cah_example_utils.h",
+              "DocumentMoniker": "C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\rb_cah_example_utils.h",
+              "RelativeDocumentMoniker": "examples\\rb_cah_example_utils.h",
+              "ToolTip": "C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\rb_cah_example_utils.h",
+              "RelativeToolTip": "examples\\rb_cah_example_utils.h",
+              "ViewState": "AgIAACEAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-03T09:23:53.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "rb_common.h",
+              "DocumentMoniker": "C:\\Users\\28360\\Desktop\\rb_cahg\\src\\interface\\rb_common.h",
+              "RelativeDocumentMoniker": "src\\interface\\rb_common.h",
+              "ToolTip": "C:\\Users\\28360\\Desktop\\rb_cahg\\src\\interface\\rb_common.h",
+              "RelativeToolTip": "src\\interface\\rb_common.h",
+              "ViewState": "AgIAAN4AAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-03T09:05:04.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "rb_cah_para.h",
+              "DocumentMoniker": "C:\\Users\\28360\\Desktop\\rb_cahg\\src\\interface\\rb_cah_para.h",
+              "RelativeDocumentMoniker": "src\\interface\\rb_cah_para.h",
+              "ToolTip": "C:\\Users\\28360\\Desktop\\rb_cahg\\src\\interface\\rb_cah_para.h",
+              "RelativeToolTip": "src\\interface\\rb_cah_para.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-03T09:04:58.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "rb_cah_api.h",
+              "DocumentMoniker": "C:\\Users\\28360\\Desktop\\rb_cahg\\src\\interface\\rb_cah_api.h",
+              "RelativeDocumentMoniker": "src\\interface\\rb_cah_api.h",
+              "ToolTip": "C:\\Users\\28360\\Desktop\\rb_cahg\\src\\interface\\rb_cah_api.h",
+              "RelativeToolTip": "src\\interface\\rb_cah_api.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-03T09:04:52.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "rb_cah_example_utils.cpp",
+              "DocumentMoniker": "C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\rb_cah_example_utils.cpp",
+              "RelativeDocumentMoniker": "examples\\rb_cah_example_utils.cpp",
+              "ToolTip": "C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\rb_cah_example_utils.cpp",
+              "RelativeToolTip": "examples\\rb_cah_example_utils.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-03T09:00:52.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CMakeLists.txt",
+              "DocumentMoniker": "C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\CMakeLists.txt",
+              "RelativeDocumentMoniker": "examples\\CMakeLists.txt",
+              "ToolTip": "C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\CMakeLists.txt",
+              "RelativeToolTip": "examples\\CMakeLists.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-03T08:58:45.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "rb_cah_example_video.cpp",
+              "DocumentMoniker": "C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\rb_cah_example_video.cpp",
+              "RelativeDocumentMoniker": "examples\\rb_cah_example_video.cpp",
+              "ToolTip": "C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\rb_cah_example_video.cpp",
+              "RelativeToolTip": "examples\\rb_cah_example_video.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-03T08:58:10.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CMakeLists.txt",
+              "DocumentMoniker": "C:\\Users\\28360\\Desktop\\rb_cahg\\CMakeLists.txt",
+              "RelativeDocumentMoniker": "CMakeLists.txt",
+              "ToolTip": "C:\\Users\\28360\\Desktop\\rb_cahg\\CMakeLists.txt",
+              "RelativeToolTip": "CMakeLists.txt",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAAwKoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-03T08:52:40.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "rb_cah_utils.h",
+              "DocumentMoniker": "C:\\Users\\28360\\Desktop\\rb_cahg\\src\\module\\include\\rb_cah_utils.h",
+              "RelativeDocumentMoniker": "src\\module\\include\\rb_cah_utils.h",
+              "ToolTip": "C:\\Users\\28360\\Desktop\\rb_cahg\\src\\module\\include\\rb_cah_utils.h",
+              "RelativeToolTip": "src\\module\\include\\rb_cah_utils.h",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAkwEoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-03T06:44:06.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "rb_cah_example_image.cpp",
+              "DocumentMoniker": "C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\rb_cah_example_image.cpp",
+              "RelativeDocumentMoniker": "examples\\rb_cah_example_image.cpp",
+              "ToolTip": "C:\\Users\\28360\\Desktop\\rb_cahg\\examples\\rb_cah_example_image.cpp",
+              "RelativeToolTip": "examples\\rb_cah_example_image.cpp",
+              "ViewState": "AgIAAOIAAAAAAAAAAAAAwPIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-03T03:37:36.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "rb_cah_detector.cpp",
+              "DocumentMoniker": "C:\\Users\\28360\\Desktop\\rb_cahg\\src\\module\\source\\rb_cah_detector.cpp",
+              "RelativeDocumentMoniker": "src\\module\\source\\rb_cah_detector.cpp",
+              "ToolTip": "C:\\Users\\28360\\Desktop\\rb_cahg\\src\\module\\source\\rb_cah_detector.cpp",
+              "RelativeToolTip": "src\\module\\source\\rb_cah_detector.cpp",
+              "ViewState": "AgIAAJMBAAAAAAAAAAAkwIwBAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-03T02:05:55.832Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 357,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

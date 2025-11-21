@@ -1,0 +1,9 @@
+.vscode/
+examples/build/
+tests/build/
+tools/build/
+*build*/
+host-build/
+temp_example/
+si_edge_gconfig.h
+si_edge_signature.cpp

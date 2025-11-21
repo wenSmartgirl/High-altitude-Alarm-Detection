@@ -1,0 +1,27 @@
+++++++  In CAH API: Process Time Span ++++++ 43.4712 ms
+目标数量: 0
+++++++  In CRbCASUtils: Convert Image Time Span ++++++ 0.447021 ms
+++++++ in detector  __pre_process Image Time Span ++++++ 0.328857 ms
+hello
+++++++ in detector  __pre_process Image Time Span ++++++ 3.48291 ms
+++++++ in detector  process net Time Span ++++++ 43.2139 ms
+===================== get_results===========0
+++++++ in detector  __post_process net Time Span ++++++ 0.0839844 ms
+++++++  In CRbCAHUtils: Network Process Image Time Span ++++++ 46.9021 ms
+++++++  In CAH API: Process Time Span ++++++ 47.4341 ms
+目标数量: 0
+++++++  In CRbCASUtils: Convert Image Time Span ++++++ 0.478027 ms
+++++++ in detector  __pre_process Image Time Span ++++++ 0.340088 ms
+hello
+++++++ in detector  __pre_process Image Time Span ++++++ 3.51416 ms
+++++++ in detector  process net Time Span ++++++ 37.564 ms
+===================== get_results===========2
+++++++ in detector  __post_process net Time Span ++++++ 0.103027 ms
+++++++  In CRbCAHUtils: Network Process Image Time Span ++++++ 41.281 ms
+++++++  In CAH API: Process Time Span ++++++ 41.834 ms
+目标数量: 2
+terminate called after throwing an instance of 'std::length_error'
+  what():  basic_string::_M_create
+已放弃 (核心已转储)
+(base) firefly@firefly:~/work/rb_cahg/temp_example$ 
+

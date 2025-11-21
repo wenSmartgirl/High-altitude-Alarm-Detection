@@ -1,0 +1,112 @@
+
+#include "rb_cah_gconfig.h"
+
+static const char rb_cah_signature_string[] = "@CAH_SIGNATURE_STR@";
+
+// 获取signature字串
+const char* rb_cah_get_signature()
+{
+    return rb_cah_signature_string;
+}
+
+
+#ifdef SHOW_DEBUG_TIME
+    void __sleep_time(int ims)
+{
+#ifdef _WIN32
+    Sleep(ims / 10);
+#else
+    sleep(ims / 1000);
+#endif
+}
+
+// 获取当前时间
+double __get_current_time_proc()
+{
+#ifdef _WIN32
+    LARGE_INTEGER freq;
+    LARGE_INTEGER pc;
+    QueryPerformanceFrequency(&freq);
+    QueryPerformanceCounter(&pc);
+
+    return pc.QuadPart * 1000.0 / freq.QuadPart;
+#else
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+
+    return tv.tv_sec * 1000.0 + tv.tv_usec / 1000.0;
+#endif
+}
+#endif
+
+
+/**
+ * @brief 将外部的图像数据转换为 opencv 图像数据
+ * 
+ * @param  pstImg           外部的图像数据
+ * @return cv::Mat          返回的 opencv 图像数据
+ */
+cv::Mat convert2CvMat(const RB_IMAGE_S *pstImg)
+{
+    RB_S32 s32W, s32H, s32ImgSz;
+    s32W = pstImg->s32W;
+    s32H = pstImg->s32H;
+    s32ImgSz = s32W * s32H;
+
+    cv::Mat matCVImg = cv::Mat( s32H, s32W, CV_8UC3);
+
+    if (pstImg == NULL || pstImg->pData == NULL)
+    {
+        std::cout<<"The Image is NULL"<<std::endl;
+        return matCVImg;
+    }
+
+    switch (pstImg->eFormat)
+    {
+    /* YUV-NV12 转 BGR */
+    case RB_IMAGE_FORMAT_YUV420_NV12:
+        {
+            cv::Mat matYUVSrc = cv::Mat(s32H * 1.5, s32W, CV_8UC1, pstImg->pData);
+            //cv::cvtColor(matYUVSrc, matCVImg, cv::CV_YUV2BGR_NV12);
+            cv::cvtColor(matYUVSrc, matCVImg, cv::COLOR_YUV2BGR_NV12);
+            break;
+        }
+    /* YUV_NV21 转 BGR */
+    case RB_IMAGE_FORMAT_YUV420_NV21:
+        {    
+            cv::Mat matYUVSrc = cv::Mat(s32H * 1.5, s32W, CV_8UC1, pstImg->pData);
+            //cv::cvtColor(matYUVSrc, matCVImg, cv::CV_YUV2BGR_NV21);
+            cv::cvtColor(matYUVSrc, matCVImg, cv::COLOR_YUV2BGR_NV21);
+            break;
+        }
+    /* BGR Packed 数据直接打包 */
+    case RB_IMAGE_FORMAT_BGR_PACKED:
+        {
+            memcpy(matCVImg.data, pstImg->pData, s32ImgSz * 3 * sizeof(RB_U8));
+            break;
+        }
+    case RB_IMAGE_FORMAT_BayerGR:
+        {
+            cv::Mat matSrc = cv::Mat(s32H, s32W, CV_8UC1, pstImg->pData);
+            //cv::cvtColor(matSrc, matCVImg, cv::CV_BayerGR2BGR);
+            cv::cvtColor(matSrc, matCVImg, cv::COLOR_BayerGR2BGR);
+            break;
+        }
+    case RB_IMAGE_FORMAT_BayerRG:
+        {
+            cv::Mat matSrc = cv::Mat(s32H, s32W, CV_8UC1, pstImg->pData);
+            //cv::cvtColor(matSrc, matCVImg, cv::CV_BayerRG2BGR);
+            cv::cvtColor(matSrc, matCVImg, cv::COLOR_BayerRG2BGR);
+            break;
+        }
+    /* 其他格式暂时不支持 */
+    default:
+        {
+            std::cout<<"The Image format is not support"<<std::endl;
+            return matCVImg;
+            break;
+        }
+    }
+    
+    return matCVImg;    
+}
